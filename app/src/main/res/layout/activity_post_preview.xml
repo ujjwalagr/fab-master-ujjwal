@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight=".1">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/post_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:src="@drawable/img1" />
+
+    <EditText
+        android:id="@+id/post_description_post_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:maxLength="140" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scrollbars="vertical"
+        android:layout_weight="2"
+        android:id="@+id/post_preview_group_recyler"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/post_preview_post_button"
+        android:layout_width="100dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_weight=".9"
+        android:text="Post"
+        />
+
+
+</LinearLayout>

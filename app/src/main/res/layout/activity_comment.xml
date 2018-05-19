@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9.8"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:background="#f0f0f0"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+
+        <EditText
+            android:id="@+id/postComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight=".7"
+            android:background="#f0f0f0" />
+
+        <ImageButton
+            android:id="@+id/commentSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="4.3"
+            android:background="#f0f0f0"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_send_black_24dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
